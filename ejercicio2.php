@@ -6,8 +6,13 @@
 
 
 // Aquí tu código
-
-
+function perimetroTriangulo($l1,$l2,$l3) {
+if ($l1 + $l2 > $l3 && $l2 + $l3 > $l1 && $l3 + $l1 > $l2 ) {
+return $l1 + $l2 + $l3;
+} else {
+return -1;
+}
+}
 
 // TESTS
 assert(perimetroTriangulo(1, 1, 1) == 3);
