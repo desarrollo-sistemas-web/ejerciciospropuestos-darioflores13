@@ -9,7 +9,16 @@
 
 // Aquí tu código
 
-
+function slug(string $palabra){
+    if (empty($palabra)) {
+        return "error";
+    }
+    
+    $palabra = strtolower($palabra);
+    $nuevapalabra = str_replace (" ", "-", $palabra);
+    return $nuevapalabra;
+    
+    }
 
 
 // TESTS

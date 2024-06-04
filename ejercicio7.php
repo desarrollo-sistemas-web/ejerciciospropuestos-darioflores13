@@ -36,9 +36,33 @@ $puntuaciones2 = [
 ];
 
 // Aquí tu código
+function puntuacion($notas){
+$suma = array_sum($notas);
+$cantidad = count($notas);
+$promedio = $suma / $cantidad;
+
+
+$maximo = max($notas);
+$minimo = min($notas);
+
+return[
+    "Promedio"=> $promedio,
+    "Máxima Nota" => $maximo,
+    "Minima Nota" => $minimo
+];
 
 
 
+}
+//Puntuaciones
+puntuacion ($puntuaciones);
+$res1=puntuacion ($puntuaciones);
+print_r($res1);
+
+//Puntuaciones 2
+puntuacion($puntuaciones2);
+$res2=puntuacion ($puntuaciones2);
+print_r($res2);
 
 // TESTS
 assert(puntuacion($puntuaciones) == [
@@ -55,3 +79,20 @@ assert(puntuacion($puntuaciones2) == [
     "max_users" => ["Raquel"],
     "min_users" => ["David"]
 ]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -5,9 +5,25 @@
 // Si el operador no es válido, la función deberá devolver -1.
 
 // Aquí tu código
-
-
-
+function operacion(int $par1, $par2, string $par3){
+    switch ($par3) {
+        case ("+"):
+        return $par1 + $par2;
+        break;
+            case ("-"):
+            return $par1 - $par2;
+            break;
+                case ("*"):
+                return $par1 * $par2;
+                break;
+                    case ("/"):
+                    return $par1 / $par2;
+                      break;
+                         default:
+                         return -1;
+                         break;
+    }
+}
 
 // TESTS
 assert(operacion(1, 1, '+') == 2);

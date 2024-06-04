@@ -5,9 +5,13 @@
 
 
 // Aquí tu código
-
-
-
+function mayorDelArreglo (int $numeros){
+    if (empty($numeros)) {
+    return -1;
+    } else {
+    return max($numeros);
+    }
+}
 
 // TESTS
 assert(mayorDelArreglo([1, 2, 3, 4, 5]) == 5);
